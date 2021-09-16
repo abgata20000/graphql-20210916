@@ -24,7 +24,7 @@ const root = {
 };
 
 const app = express();
-app.use('/', graphqlHTTP({
+app.use('/graphql', graphqlHTTP({
   schema: schema,
   rootValue: root,
   graphiql: true,
